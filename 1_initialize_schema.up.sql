@@ -10,10 +10,10 @@ CREATE TABLE IF NOT EXISTS accounts (
 
 CREATE TABLE IF NOT EXISTS drivers (
     id integer PRIMARY KEY,
-    first_name text NOT NULL,   
-    last_name text NOT NULL,   
-    idnp CHARACTER(13) NOT NULL UNIQUE,   
-    age integer,
+    first_name text NULL,   
+    last_name text NULL,   
+    idnp CHARACTER(13) NULL UNIQUE,   
+    age integer NULL,
     dayOrdersLimit integer DEFAULT 24,
     created_at timestamp without time zone NOT NULL DEFAULT now(),
     updated_at timestamp without time zone NOT NULL DEFAULT now(),
@@ -23,8 +23,8 @@ CREATE TABLE IF NOT EXISTS drivers (
 
 CREATE TABLE IF NOT EXISTS clients (
     id integer PRIMARY KEY,
-    first_name text NOT NULL,   
-    last_name text NOT NULL,   
+    first_name text NULL,   
+    last_name text NULL,   
     created_at timestamp without time zone NOT NULL DEFAULT now(),
     updated_at timestamp without time zone NOT NULL DEFAULT now(),
 
