@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS drivers (
     last_name text NULL,   
     idnp CHARACTER(13) NULL UNIQUE,   
     age integer NULL,
-    dayOrdersLimit integer DEFAULT 24,
+    day_orders_limit integer DEFAULT 24,
     created_at timestamp without time zone NOT NULL DEFAULT now(),
     updated_at timestamp without time zone NOT NULL DEFAULT now(),
 
