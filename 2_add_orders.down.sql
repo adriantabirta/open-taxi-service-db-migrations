@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS orders_locations;
+DROP TABLE IF EXISTS order;
