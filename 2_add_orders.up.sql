@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS orders (
     created_at timestamp without time zone NOT NULL DEFAULT now(),
     updated_at timestamp without time zone NOT NULL DEFAULT now(),
 
-    CONSTRAINT fk_client_id FOREIGN KEY(client_id) REFERENCES clients(id)
+    CONSTRAINT fk_client_id FOREIGN KEY(client_id) REFERENCES clients(id),
     CONSTRAINT fk_driver_id FOREIGN KEY(driver_id) REFERENCES drivers(id)
 );
 
