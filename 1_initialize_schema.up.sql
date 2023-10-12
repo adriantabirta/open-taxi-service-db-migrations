@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS drivers (
     id BIGINT PRIMARY KEY,
     first_name TEXT NULL DEFAULT '',   
     last_name TEXT NULL DEFAULT '',   
-    idnp CHARACTER(13) NULL UNIQUE DEFAULT '',   
+    idnp CHARACTER(13) NULL DEFAULT '',   
     age INTEGER NULL,
     day_orders_limit INTEGER DEFAULT 24,
     created_at timestamp without time zone NOT NULL DEFAULT now(),
