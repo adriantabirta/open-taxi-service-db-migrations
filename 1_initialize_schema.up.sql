@@ -38,3 +38,12 @@ CREATE TABLE IF NOT EXISTS locations (
     latitude DOUBLE PRECISION NOT NULL,  
     timestamp TIMESTAMP WITHOUT TIME ZONE NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS transactions (
+    id BIGSERIAL PRIMARY KEY,
+    order_id BIGINT NOT NULL,
+    payment_method text NOT NULL DEFAULT '',
+    amount INTEGER NOT NULL,  
+    created_at timestamp without time zone NOT NULL DEFAULT now(),
+    updated_at timestamp without time zone NOT NULL DEFAULT now(),
+);
